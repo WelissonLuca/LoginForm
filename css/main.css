@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient( #9B59BD, #A459BE) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.login{
+    min-height: 600px;
+    max-width: 50%;
+    background: #FEFEFE;
+    margin: 300px auto;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    border-radius: 2%;
+   
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+form h1{
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: #212327;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+form input{
+    padding: 15px 50px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: none;
+    background: #D8D9D8;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+form .email::placeholder {
+    background-image: url(../assets/email.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+form .password::placeholder{
+    background: url(../assets/cadeado.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+form .email:focus, form .password:focus {
+    background-image:none;
+    text-indent:0px;
+    color: #000;
+}
+form button{
+    padding: 15px 115px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    color: #F1F0F2;
+    background: #6EB155;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+form span{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #9998A2;
+}
+.create{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #9998A2;
+    position: relative;
+    top: 110px;
+    
+}
+.create img{
+     max-width: 60px;
+     position: absolute;
+     top: -22.5px;
+     left: 110px;
+     cursor: pointer;
+}
